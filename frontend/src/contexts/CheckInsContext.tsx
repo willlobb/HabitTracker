@@ -1,6 +1,6 @@
 import { createContext, useContext, useReducer, ReactNode, useEffect } from 'react';
-import { CheckIn, Habit } from '../types';
-import { db, dbHelpers } from '../services/database';
+import { CheckIn } from '../types';
+import { db } from '../services/database';
 import { format, startOfDay, isSameDay } from 'date-fns';
 
 interface CheckInsState {
@@ -78,7 +78,6 @@ export function CheckInsProvider({ children }: { children: ReactNode }) {
   };
 
   const getCheckInByDate = (habitId: string, date: Date): CheckIn | undefined => {
-    const dateStr = format(startOfDay(date), 'yyyy-MM-dd');
     return state.checkIns.find(
       ci => ci.habitId === habitId && isSameDay(new Date(ci.date), date)
     );

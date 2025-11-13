@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Habit, CheckIn } from '../types';
 import { useCheckIns } from '../contexts/CheckInsContext';
-import { format, startOfDay, isSameDay } from 'date-fns';
+import { format, startOfDay } from 'date-fns';
 
 interface CheckInInterfaceProps {
   habit: Habit;
@@ -73,18 +73,6 @@ export default function CheckInInterface({ habit, date = new Date() }: CheckInIn
     }
   };
 
-  const getValueLabel = () => {
-    if (habit.targetType === 'boolean') {
-      return existingCheckIn?.completed ? 'Completed' : 'Not Completed';
-    }
-    const labels: Record<string, string> = {
-      times: 'times',
-      minutes: 'minutes',
-      pages: 'pages',
-      count: 'items',
-    };
-    return `${value} ${labels[habit.targetType] || 'units'}`;
-  };
 
   if (habit.targetType === 'boolean') {
     return (

@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Settings from './Settings';
 
 interface LayoutProps {
@@ -8,7 +8,6 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   const [showSettings, setShowSettings] = useState(false);
-  const location = useLocation();
 
   return (
     <div className="min-h-screen bg-gray-50">

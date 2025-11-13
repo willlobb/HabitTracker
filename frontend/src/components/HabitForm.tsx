@@ -168,7 +168,7 @@ export default function HabitForm({ habit, onClose }: HabitFormProps) {
                 min="1"
                 step="1"
                 {...register('targetValue', { 
-                  required: targetType !== 'boolean' ? 'Target value is required' : false,
+                  required: (targetType as string) !== 'boolean' ? 'Target value is required' : false,
                   min: { value: 1, message: 'Target value must be at least 1' }
                 })}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"

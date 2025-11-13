@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Habit, Goal, SubTask } from '../types';
+import { Habit } from '../types';
 import { useGoals } from '../contexts/GoalsContext';
 import GoalProgressBar from './GoalProgressBar';
 
@@ -8,7 +8,7 @@ interface GoalManagerProps {
 }
 
 export default function GoalManager({ habit }: GoalManagerProps) {
-  const { getGoalByHabitId, createGoal, updateGoal, addSubTask, updateSubTask, deleteSubTask } = useGoals();
+  const { getGoalByHabitId, createGoal, addSubTask, updateSubTask, deleteSubTask } = useGoals();
   const goal = getGoalByHabitId(habit.id);
   const [showGoalForm, setShowGoalForm] = useState(false);
   const [showSubTaskForm, setShowSubTaskForm] = useState(false);

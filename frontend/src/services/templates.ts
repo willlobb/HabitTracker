@@ -1,4 +1,4 @@
-import { HabitTemplate, Habit, Frequency, TargetType } from '../types';
+import { HabitTemplate, Habit } from '../types';
 
 /**
  * Pre-built habit templates

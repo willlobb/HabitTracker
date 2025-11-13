@@ -1,5 +1,5 @@
 import { CheckIn, Habit, Streak } from '../types';
-import { format, startOfDay, differenceInDays, isSameDay, addDays, subDays } from 'date-fns';
+import { startOfDay, differenceInDays, isSameDay, subDays } from 'date-fns';
 
 /**
  * Calculates the current streak for a habit based on check-ins

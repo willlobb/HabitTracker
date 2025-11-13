@@ -1,8 +1,8 @@
 import { createContext, useContext, useReducer, ReactNode, useEffect } from 'react';
-import { Reminder, Habit } from '../types';
+import { Reminder } from '../types';
 import { db } from '../services/database';
 import { calculateNextReminderDate } from '../services/notifications';
-import { format, isBefore, isAfter } from 'date-fns';
+import { isBefore, isAfter } from 'date-fns';
 
 interface RemindersState {
   reminders: Reminder[];
@@ -183,7 +183,7 @@ export function RemindersProvider({ children }: { children: ReactNode }) {
       const dueReminders = getDueReminders();
       if (dueReminders.length > 0) {
         // Trigger notifications (will be handled by notification service)
-        dueReminders.forEach(reminder => {
+        dueReminders.forEach(() => {
           // This will be handled by a notification service component
         });
       }

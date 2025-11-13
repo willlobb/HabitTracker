@@ -22,7 +22,7 @@ export async function exportHabitToICS(habit: Habit, startDate: Date = new Date(
 
   while (currentDate <= endDate) {
     const dateStr = format(currentDate, 'yyyyMMdd');
-    const timeStr = '090000'; // Default to 9 AM
+    // const timeStr = '090000'; // Default to 9 AM
 
     events.push({
       title: habit.name,

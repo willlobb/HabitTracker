@@ -1,4 +1,4 @@
-import { Goal, SubTask } from '../types';
+import { Goal } from '../types';
 
 /**
  * Calculates the progress percentage for a goal based on completed sub-tasks

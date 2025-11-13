@@ -46,7 +46,7 @@ export default function TemplateSelector() {
     template.category.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  const categories = Array.from(new Set(templates.map(t => t.category)));
+  // const categories = Array.from(new Set(templates.map(t => t.category)));
 
   return (
     <div className="mb-6">

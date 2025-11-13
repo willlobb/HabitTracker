@@ -3,14 +3,13 @@ import { Habit } from '../types';
 import { useReminders } from '../contexts/RemindersContext';
 import { requestNotificationPermission, showNotification } from '../services/notifications';
 import { calculateNextReminderDate } from '../services/notifications';
-import { format } from 'date-fns';
 
 interface ReminderManagerProps {
   habit: Habit;
 }
 
 export default function ReminderManager({ habit }: ReminderManagerProps) {
-  const { getReminderByHabit, createReminder, updateReminder, deleteReminder, snoozeReminder, markReminderAsDone } = useReminders();
+  const { getReminderByHabit, createReminder, updateReminder, snoozeReminder, markReminderAsDone } = useReminders();
   const reminder = getReminderByHabit(habit.id);
   const [notificationPermission, setNotificationPermission] = useState<NotificationPermission>('default');
   const [reminderTime, setReminderTime] = useState('09:00');

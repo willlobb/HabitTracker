@@ -1,4 +1,4 @@
-import { CheckIn, Habit, Frequency } from '../types';
+import { CheckIn, Habit } from '../types';
 import { startOfWeek, startOfMonth, startOfYear, endOfWeek, endOfMonth, endOfYear, format, eachDayOfInterval, isSameDay } from 'date-fns';
 import { calculateExpectedCheckIns } from './validation';
 
@@ -75,7 +75,7 @@ export function calculateProgress(
 /**
  * Calculates overall completion rate for a habit
  */
-export function calculateCompletionRate(habit: Habit, checkIns: CheckIn[]): number {
+export function calculateCompletionRate(_habit: Habit, checkIns: CheckIn[]): number {
   if (checkIns.length === 0) return 0;
   
   const completed = checkIns.filter(ci => ci.completed).length;
