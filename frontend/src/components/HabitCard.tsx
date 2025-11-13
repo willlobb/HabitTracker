@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Habit } from '../../shared/types';
+import { Habit } from '../types';
 import { useHabits } from '../contexts/HabitsContext';
 import HabitForm from './HabitForm';
 import GoalManager from './GoalManager';

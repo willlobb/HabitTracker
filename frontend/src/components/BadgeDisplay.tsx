@@ -1,4 +1,4 @@
-import { Badge } from '../../shared/types';
+import { Badge } from '../types';
 import { format } from 'date-fns';
 
 interface BadgeDisplayProps {

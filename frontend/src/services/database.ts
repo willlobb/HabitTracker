@@ -1,5 +1,5 @@
 import Dexie, { Table } from 'dexie';
-import type { Habit, Goal, SubTask, CheckIn, Streak, Reminder, Badge, HabitTemplate } from '../../shared/types';
+import type { Habit, Goal, SubTask, CheckIn, Streak, Reminder, Badge, HabitTemplate } from '../types';
 
 class HabitTrackerDB extends Dexie {
   habits!: Table<Habit>;

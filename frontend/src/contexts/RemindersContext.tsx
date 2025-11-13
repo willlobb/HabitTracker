@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer, ReactNode, useEffect } from 'react';
-import { Reminder, Habit } from '../../shared/types';
+import { Reminder, Habit } from '../types';
 import { db } from '../services/database';
 import { calculateNextReminderDate } from '../services/notifications';
 import { format, isBefore, isAfter } from 'date-fns';

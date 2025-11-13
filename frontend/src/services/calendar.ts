@@ -1,5 +1,5 @@
 import { createEvents, EventAttributes } from 'ics';
-import { Habit, Frequency } from '../../shared/types';
+import { Habit, Frequency } from '../types';
 import { format, addDays, addWeeks, addMonths, addYears, startOfDay } from 'date-fns';
 
 /**

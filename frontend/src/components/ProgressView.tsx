@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Habit, Streak } from '../../shared/types';
+import { Habit, Streak } from '../types';
 import { useCheckIns } from '../contexts/CheckInsContext';
-import { calculateProgress, calculateCompletionRate, ProgressData } from '../utils/progress';
+import { calculateProgress, calculateCompletionRate, type ProgressData } from '../utils/progress';
 import { calculateStreak } from '../utils/streaks';
 import { db } from '../services/database';
 import ProgressChart from './ProgressChart';

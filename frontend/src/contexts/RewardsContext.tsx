@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer, ReactNode, useEffect } from 'react';
-import { Badge, Streak } from '../../shared/types';
+import { Badge, Streak } from '../types';
 import { db } from '../services/database';
 
 interface RewardsState {

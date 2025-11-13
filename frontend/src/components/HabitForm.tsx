@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import { Habit, Frequency, TargetType } from '../../shared/types';
+import { Habit, Frequency, TargetType } from '../types';
 import { useHabits } from '../contexts/HabitsContext';
 import { validateFrequencyTarget } from '../utils/validation';
 

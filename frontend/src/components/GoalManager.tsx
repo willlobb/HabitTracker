@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Habit, Goal, SubTask } from '../../shared/types';
+import { Habit, Goal, SubTask } from '../types';
 import { useGoals } from '../contexts/GoalsContext';
 import GoalProgressBar from './GoalProgressBar';
 

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Habit } from '../../shared/types';
+import { Habit } from '../types';
 import { exportHabitToICS, parseICSFile } from '../services/calendar';
 
 interface CalendarIntegrationProps {

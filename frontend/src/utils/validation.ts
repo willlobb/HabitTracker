@@ -1,4 +1,4 @@
-import { Frequency, TargetType } from '../../shared/types';
+import { Frequency, TargetType } from '../types';
 
 /**
  * Validates frequency and target combinations

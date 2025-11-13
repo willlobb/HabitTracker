@@ -1,4 +1,4 @@
-import { CheckIn, Habit, Streak } from '../../shared/types';
+import { CheckIn, Habit, Streak } from '../types';
 import { format, startOfDay, differenceInDays, isSameDay, addDays, subDays } from 'date-fns';
 
 /**

@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer, ReactNode, useEffect } from 'react';
-import { Habit } from '../../shared/types';
+import { Habit } from '../types';
 import { db, dbHelpers } from '../services/database';
 
 interface HabitsState {

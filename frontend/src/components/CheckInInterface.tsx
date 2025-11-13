@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Habit, CheckIn } from '../../shared/types';
+import { Habit, CheckIn } from '../types';
 import { useCheckIns } from '../contexts/CheckInsContext';
 import { format, startOfDay, isSameDay } from 'date-fns';
 

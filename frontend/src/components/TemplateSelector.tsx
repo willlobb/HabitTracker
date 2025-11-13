@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { HabitTemplate } from '../../shared/types';
+import { HabitTemplate } from '../types';
 import { preBuiltTemplates, templateToHabit, getAllTemplates } from '../services/templates';
 import { db } from '../services/database';
 import { useHabits } from '../contexts/HabitsContext';

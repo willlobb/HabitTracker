@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer, ReactNode, useEffect } from 'react';
-import { Goal, SubTask } from '../../shared/types';
+import { Goal, SubTask } from '../types';
 import { db } from '../services/database';
 
 interface GoalsState {

@@ -1,4 +1,4 @@
-import { Goal } from '../../shared/types';
+import { Goal } from '../types';
 import { calculateGoalProgress } from '../utils/goals';
 
 interface GoalProgressBarProps {

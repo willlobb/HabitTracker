@@ -1,4 +1,4 @@
-import { Streak } from '../../shared/types';
+import { Streak } from '../types';
 
 interface StreakDisplayProps {
   streak: Streak;

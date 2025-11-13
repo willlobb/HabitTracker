@@ -1,4 +1,4 @@
-import { CheckIn, Habit, Frequency } from '../../shared/types';
+import { CheckIn, Habit, Frequency } from '../types';
 import { startOfWeek, startOfMonth, startOfYear, endOfWeek, endOfMonth, endOfYear, format, eachDayOfInterval, isSameDay } from 'date-fns';
 import { calculateExpectedCheckIns } from './validation';
 

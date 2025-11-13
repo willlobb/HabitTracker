@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Habit } from '../../shared/types';
+import { Habit } from '../types';
 import { useReminders } from '../contexts/RemindersContext';
 import { requestNotificationPermission, showNotification } from '../services/notifications';
 import { calculateNextReminderDate } from '../services/notifications';

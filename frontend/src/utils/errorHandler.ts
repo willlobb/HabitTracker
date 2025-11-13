@@ -35,7 +35,7 @@ export function createAutoSave<T>(
   saveFn: (data: T) => Promise<void>,
   delay: number = 1000
 ) {
-  let timeoutId: NodeJS.Timeout | null = null;
+  let timeoutId: ReturnType<typeof setTimeout> | null = null;
   let lastData: T | null = null;
 
   return (data: T) => {

@@ -11,7 +11,7 @@ export function usePerformance(componentName: string) {
     renderCount.current += 1;
     const renderTime = Date.now() - startTime.current;
     
-    if (process.env.NODE_ENV === 'development' && renderTime > 100) {
+    if (import.meta.env.DEV && renderTime > 100) {
       console.warn(`Slow render detected in ${componentName}: ${renderTime}ms`);
     }
   });

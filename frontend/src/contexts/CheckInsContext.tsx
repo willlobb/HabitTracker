@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer, ReactNode, useEffect } from 'react';
-import { CheckIn, Habit } from '../../shared/types';
+import { CheckIn, Habit } from '../types';
 import { db, dbHelpers } from '../services/database';
 import { format, startOfDay, isSameDay } from 'date-fns';
 
