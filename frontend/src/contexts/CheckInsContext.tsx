@@ -1,7 +1,7 @@
 import { createContext, useContext, useReducer, ReactNode, useEffect } from 'react';
 import { CheckIn } from '../types';
 import { db } from '../services/database';
-import { format, startOfDay, isSameDay } from 'date-fns';
+import { isSameDay } from 'date-fns';
 
 interface CheckInsState {
   checkIns: CheckIn[];
